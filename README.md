@@ -1,4 +1,6 @@
 # HamburgerMenu
 Hamburger Drawer For iOS using Swift
 
-<img src="https://user-images.githubusercontent.com/16319829/81180309-2b51f000-8fee-11ea-8a78-ddfe8c3412a7.png" width=50% height=50%>
+<img src="https://github.com/ShivadityaKr/HamburgerMenu/blob/main/HamburgerModule/ScreenShot/Simulator%20Screen%20Shot%20-%20iPhone%2014%20-%202022-11-24%20at%2017.06.00.png" width=30% height=30%>
+<img src="https://github.com/ShivadityaKr/HamburgerMenu/blob/main/HamburgerModule/ScreenShot/Simulator%20Screen%20Shot%20-%20iPhone%2014%20-%202022-11-24%20at%2017.06.03.png" width=30% height=30%>
+
