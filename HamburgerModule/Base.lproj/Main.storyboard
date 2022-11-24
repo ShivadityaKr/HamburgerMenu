@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HamburgerModule" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CHz-Fw-E02">
+                                <rect key="frame" x="0.0" y="47" width="50" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="W6I-WK-Sun"/>
+                                    <constraint firstAttribute="height" constant="50" id="pnZ-PK-GPm"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="rectangle.righthalf.filled" catalog="system"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hamburger" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tY-ws-JYT">
+                                <rect key="frame" x="20" y="409" width="350" height="26.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2tY-ws-JYT" secondAttribute="trailing" constant="20" id="2Q2-ZM-dJq"/>
+                            <constraint firstItem="CHz-Fw-E02" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="MUk-M7-cnx"/>
+                            <constraint firstItem="2tY-ws-JYT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="NLg-Lq-bfg"/>
+                            <constraint firstItem="2tY-ws-JYT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Wet-fE-5zc"/>
+                            <constraint firstItem="CHz-Fw-E02" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ejf-Fm-A1q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hamburgerButton" destination="CHz-Fw-E02" id="xh1-Dj-1lS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37" y="4"/>
+        </scene>
+        <!--HamburgerVC-->
+        <scene sceneID="r1R-mB-w3F">
+            <objects>
+                <viewController storyboardIdentifier="HamburgerVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="v0j-Xb-vwE" customClass="HamburgerVC" customModule="HamburgerModule" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FiH-zN-72T">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ig5-9J-b5h">
+                                <rect key="frame" x="0.0" y="47" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="9S2-EO-Ybk"/>
+                                    <constraint firstAttribute="height" constant="50" id="II4-HJ-5WH"/>
+                                </constraints>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="rectangle.lefthalf.filled" catalog="system"/>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vfz-K1-mAh">
+                                <rect key="frame" x="20" y="222" width="350" height="400"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="DbM-Hv-een"/>
+                                </constraints>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jtm-xY-c59"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ig5-9J-b5h" firstAttribute="leading" secondItem="jtm-xY-c59" secondAttribute="leading" id="87O-Ft-aS1"/>
+                            <constraint firstItem="Ig5-9J-b5h" firstAttribute="top" secondItem="jtm-xY-c59" secondAttribute="top" id="KmI-MW-cDP"/>
+                            <constraint firstItem="vfz-K1-mAh" firstAttribute="leading" secondItem="jtm-xY-c59" secondAttribute="leading" constant="20" id="LMc-rm-6rI"/>
+                            <constraint firstItem="vfz-K1-mAh" firstAttribute="centerY" secondItem="FiH-zN-72T" secondAttribute="centerY" id="bvR-tF-t9i"/>
+                            <constraint firstItem="jtm-xY-c59" firstAttribute="trailing" secondItem="vfz-K1-mAh" secondAttribute="trailing" constant="20" id="muO-CR-JsU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="Ig5-9J-b5h" id="XQo-1h-wEN"/>
+                        <outlet property="tableView" destination="vfz-K1-mAh" id="0gA-2K-qp2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="olO-Pj-EPj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="809" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="rectangle.lefthalf.filled" catalog="system" width="128" height="93"/>
+        <image name="rectangle.righthalf.filled" catalog="system" width="128" height="93"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
